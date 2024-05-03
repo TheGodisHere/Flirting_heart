@@ -10,7 +10,7 @@ body {
 .centered-box {
     width: 200px;
     height: 150px;
-    background-color: #007bff;
+    background-color: #ea00ff;
     border-radius: 10px;
     position: relative;
     cursor: pointer;
@@ -18,7 +18,7 @@ body {
     justify-content: center;
     align-items: center;
     font-family: Arial, sans-serif;
-    color: #fff;
+    color: #e50a0a6b;
     font-size: 16px;
     text-decoration: none;
 }
