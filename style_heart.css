@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .heart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+    background: #ff4d4d;
+    transform: rotate(-45deg);
+    animation: beat 1.2s infinite alternate;
+  }
+  
+  .heart::before,
+  .heart::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    background: #ff4d4d;
+    border-radius: 50%;
+  }
+  
+  .heart::before {
+    left: 50px;
+    border-radius: 50% 0 0 50%;
+  }
+  
+  .heart::after {
+    left: 0;
+    border-radius: 0 50% 50% 0;
+  }
+  
+  @keyframes beat {
+    to {
+      transform: scale(1.1) rotate(-45deg);
+    }
+  }
+  
